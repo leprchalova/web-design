@@ -1,0 +1,135 @@
+:root {
+    --light-blue: #4b9ac8;
+    --dark-blue: #34759b;
+    --light-color: white;
+    --bg-blue: hsl(202, 51%, 82%, 50%);
+}
+
+* {
+    text-align: center;
+}
+
+.header {
+    background-image: url(../pictures/skola.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.logo-and-search {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul {
+    display: flex;
+}
+
+
+/*chování navbaru u širšího okna 
+@media screen and (min-width: 850px) {
+    .nav ul {
+        flex-wrap: nowrap;
+    }
+}
+*/
+@media screen and (min-width: 400px) {
+    .nav ul {
+        flex-wrap: wrap;
+        flex-grow: 3;
+        justify-content: center;
+    }
+}
+
+
+
+/*tlačítko hlavního menu*/
+.nav__item {
+    background-color: var(--light-blue);
+    border: none;
+    color: var(--light-color);
+    padding: 0.75em 1.25em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0.1em;
+    width: 120px;
+}
+
+li a:hover {
+    text-decoration: underline;
+    background-color: var(--dark-blue);
+}
+
+.container {
+    background-color: var(--bg-blue);
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+/* o škole - flex box*/
+@media screen and (min-width: 900px) {
+    #grid-header {
+        grid-area: header;
+    }
+
+    #grid-article {
+        grid-area: article;
+    }
+
+    #grid-picture {
+        grid-area: picture;
+    }
+
+    #grid-pic {
+        grid-area: pic;
+    }
+
+    #grid-footer {
+        grid-area: footer;
+    }
+
+    #grid-img1 {
+        grid-area: img1;
+    }
+
+    #grid-img2 {
+        grid-area: img2;
+    }
+
+    #grid-img3 {
+        grid-area: img3;
+    }
+
+    #grid-img4 {
+        grid-area: img4;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header header header"
+            "article article article picture"
+            "pic footer footer footer"
+            "img1 img2 img3 img4";
+    }
+}
