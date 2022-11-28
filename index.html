@@ -7,33 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="gymnázium, všeobecné vzdělávání">
     <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
     <title>Městské gymnázium Jirkov</title>
 </head>
 
 <body>
-    <section class="logo-and-search">
-        <a href="index.html"><img src="pictures\logo.png" alt="logo gymnázia"></a>
-        <input placeholder="Hledat..." type="text">
-    </section>
-    <header class="header">
-        
-        <h1>Městké gymnázium Jirkov</h1>
-        <p>Studium pro vaši budoucnost</p>
-        <nav class="nav">
-            <ul>
-                <li><a class="nav__item" href="o-gymnaziu.html">O gymnáziu</a></li>
-                <li><a class="nav__item" href="akce.html">Akce</a></li>
-                <li><a class="nav__item" href="pro-studenty.html">Pro studenty</a></li>
-                <li><a class="nav__item" href="prijmaci-rizeni.html">Přijmací řízení</a></li>
-                <li><a class="nav__item" href="ke-stazeni.html">Ke stažení</a></li>
-                <li><a class="nav__item" href="kontakty.html">Kontakty</a></li>
-                <!--TODO -->
-                <!--nastylovat tlačítko zpět na všech stránkách-->
-                <!--fonty, velikosti - do proměnných -->
-                <!--mělo by tam být nějaký vyhledávání-->
-                <!--drobečkovka-->
-            </ul>
+    <!--TODO -->
+    <!--nastylovat tlačítko zpět na všech stránkách-->
+    <!--fonty, velikosti - do proměnných -->
+    <!--mělo by tam být nějaký vyhledávání-->
+    <!--drobečkovka-->
+    <header>
+        <section class="logo-and-search">
+            <a href="index.html"><img src="pictures\logo-standard.png" alt="logo gymnázia"></a>
+            <input placeholder="Hledat..." type="text">
+        </section>
+        <div class="content">
+            <hgroup>
+                <h1>Městké gymnázium Jirkov</h1>
+                <p>Studium pro vaši budoucnost</p>
+            </hgroup>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <section class="site">
+        <nav>
+            <a href="o-gymnaziu.html">O gymnáziu</a>
+            <a href="pro-studenty.html">Pro studenty</a>
+            <a href="prijmaci-rizeni.html">Přijmací řízení</a>
+            <a href="ke-stazeni.html">Ke stažení</a>
+            <a href="kontakty.html">Kontakty</a>
         </nav>
+
+    </section>
+
 
     </header>
     <main>
@@ -97,5 +106,3 @@
     </footer>
 
 </body>
-
-</html>
