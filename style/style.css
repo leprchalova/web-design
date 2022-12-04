@@ -22,12 +22,16 @@ body {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    height: 5em;
 }
 
 .logo-and-search img {
     margin: 1em;
-    height: 5em;
+    height: 8em;
+}
+
+.logo-and-search input {
+    height: 2em;
+    margin: 1em 1em 0 0;
 }
 
 .header {
@@ -96,6 +100,7 @@ img {
 
 .nav a:hover {
     color: var(--dark-blue);
+    border-bottom: solid 0.25em var(--light-color);
 }
 
 .nav nav {
@@ -107,7 +112,7 @@ img {
 }
 
 .nav nav a {
-    padding: 10px 30px;
+    padding: 1em 2em;
     font-size: 1.3em;
     display: inline-block;
 }
@@ -122,6 +127,30 @@ img {
     height: auto;
 }
 
+.container header {
+    margin-top: 15em;
+
+}
+
+@media screen and (min-width: 330px) {
+    .container header {
+        margin-top: 10em;
+    }
+}
+
+@media screen and (min-width: 453px) {
+    .container header {
+        margin-top: 4em;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .container header {
+        margin-top: 0em;
+
+    }
+}
+
 @media screen and (min-width: 900px) {
     .container {
         width: 80%;
@@ -129,10 +158,13 @@ img {
     }
 }
 
-/**/
 .container img {
     width: 95%;
     margin: auto;
+}
+
+.container ol {
+    text-align: left;
 }
 
 @media screen and (min-width: 600px) {
@@ -145,6 +177,32 @@ img {
     .container img {
         width: 70%;
     }
+}
+
+.to-events {
+    margin-top: 1em;
+    text-align: right;
+}
+
+.to-events a {
+    color: var(--dark-color);
+
+}
+
+.to-events a:hover {
+    color: var(--dark-blue);
+}
+
+.to-event {
+    margin-top: 1em;
+}
+
+.to-event a {
+    color: var(--dark-color);
+}
+
+.to-event a:hover {
+    color: var(--dark-blue);
 }
 
 /* footer */
@@ -195,10 +253,12 @@ footer {
     color: var(--light-color);
     font-size: large;
     text-decoration: none;
+    border-bottom: solid 0.25em var(--dark-color);
 }
 
 .footer__nav a:hover {
     color: var(--light-blue);
+    border-bottom: solid 0.25em var(--light-blue);
 }
 
 /* o škole - flex box*/
@@ -241,6 +301,8 @@ footer {
 
     .grid-container {
         display: grid;
+        width: 80%;
+        margin: auto;
         grid-gap: 1.3%;
         grid-template-columns: (4 24%);
         grid-template-rows: auto;
@@ -252,7 +314,11 @@ footer {
     }
 
     .grid-container img {
-        width: auto;
-
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
+
+
+
 }
