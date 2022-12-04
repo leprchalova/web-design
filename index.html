@@ -20,10 +20,13 @@
     <!--fonty, velikosti - do proměnných -->
     <!--mělo by tam být nějaký vyhledávání-->
     <!--drobečkovka-->
-    <header>
+    <header class="header">
         <section class="logo-and-search">
             <a href="index.html"><img src="pictures\logo-standard.png" alt="logo gymnázia"></a>
             <input placeholder="Hledat..." type="text">
+            <script async src="https://cse.google.com/cse.js?cx=c6a95b9be5e484913">
+            </script>
+            <div class="gcse-search"></div>
         </section>
         <div class="content">
             <hgroup>
@@ -47,13 +50,17 @@
 
     </header>
     <main>
-        <section>
 
-        </section>
-        <section id="deni-na-skole" class="container">
-            <!-- Rozdělení obsahu na větší sekce-->
-            <h2>Aktuální dění na škole</h2>
-            <article>
+
+
+        <article class="container">
+            <header>
+                <h2>Aktuální dění na škole</h2>
+                <p>Zajímá vás, co se u nás ve škole v poslední době událo?</p>
+                <p>V tom případě pokračujte ve čtení.</p>
+            </header>
+            
+            
                 <h3>Paraplíčko</h3>
                 <p>V červnu se naši žáci 1. a 2. ročníku zúčastnili výukového programu Domu dětí a mládeže Paraplíčko
                     Jirkov. Tato akce byla zaměřena na polytechniku. Skládala se z řemesla a robotiky. V první části
@@ -61,7 +68,7 @@
                     vymodelovali vlastní výrobek.</p>
                 <img src="pictures\paraplicko.jpg" alt="skupina studentů v učebně vyrábí produkt ze dřeva" id="logo">
             </article>
-            <article>
+            <article class="container">
                 <h3>Gymnazisté v Botanické zahradě Praha</h3>
                 <p>Studenti Městského gymnázia Jirkov se mohli po dlouhé covidové době vydat na exkurzi do Prahy,
                     tentokrát do botanické zahrady.</br>Společně mohli obdivovat krásy venkovní expozice, jako například
@@ -74,9 +81,9 @@
                 <p>studentů</p>
                 <p>vyučujících</p>
                 <p>absolventů</p>
-    
+
             </section>
-            <article>
+            <article class="container">
                 <h3>Město ocenilo nejúspěšnější žáky a studenty</h3>
                 <p>Ocenění od města získali nejúspěšnější žáci jirkovských škol. Letošní ročník, je již třetí a poprvé
                     se konal v prostorách jirkovské synagogy.</br>Žáky na ocenění navrhovali jednotliví ředitelé škol.
@@ -96,20 +103,27 @@
                 <img src="pictures\oceneni-studenti.jpg" alt="skupina studentů v učebně vyrábí produkt ze dřeva"
                     id="logo">
             </article>
+            <div>
+                <a href="akce.html">Zobrazit více proběhlých akcí</a>
+            </div>
 
-            <a href="akce.html">Zobrazit více proběhlých akcí</a>
-        </section>
-   
+
+
 
     </main>
     <footer class="footer">
         <h2>Městké gymnázium Jirkov</h2>
         <section class="footer__nav">
-            <a href="https://www.facebook.com/gympljirkov" target="_blank"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
-            <a href="https://www.instagram.com/gympl_jirkov/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-            <a href="https://www.youtube.com/@gympljirkov8491" target="_blank"><i class="fa-brands fa-youtube"></i> Youtube</a>
-            <a href="https://login.microsoftonline.com/" target="_blank"><i class="fa-regular fa-envelope"></i> Školní e-mail</a>
-            <a href="https://www.skolaonline.cz/" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Škola online</a>
+            <a href="https://www.facebook.com/gympljirkov" target="_blank"><i class="fa-brands fa-square-facebook"></i>
+                Facebook</a>
+            <a href="https://www.instagram.com/gympl_jirkov/" target="_blank"><i class="fa-brands fa-instagram"></i>
+                Instagram</a>
+            <a href="https://www.youtube.com/@gympljirkov8491" target="_blank"><i class="fa-brands fa-youtube"></i>
+                Youtube</a>
+            <a href="https://login.microsoftonline.com/" target="_blank"><i class="fa-regular fa-envelope"></i> Školní
+                e-mail</a>
+            <a href="https://www.skolaonline.cz/" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Škola
+                online</a>
         </section>
         <p>Tato stránka je školní projekt. Nejedná se o oficiální stránky gymnázia.</p>
         <p> © 2022 Městské Gymnázium Jirkov. </p>
