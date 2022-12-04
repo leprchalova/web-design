@@ -30,7 +30,7 @@ body {
     height: 5em;
 }
 
-header {
+.header {
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -39,7 +39,7 @@ header {
     opacity: 0.75;
 }
 
-header .content {
+.header .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -48,17 +48,17 @@ header .content {
     z-index: 1;
 }
 
-header h1,
-header h2 {
+.header h1,
+.header h2 {
     margin: 0;
 }
 
-header h2 {
+.header h2 {
     text-transform: uppercase;
     margin-top: -.5em;
 }
 
-header hgroup {
+.header hgroup {
     transform: translate(-50%, -50%);
     display: inline-block;
     text-align: center;
@@ -73,7 +73,7 @@ header hgroup {
     z-index: 2;
 }
 
-header .overlay {
+.header .overlay {
     position: absolute;
     background-size: cover;
 }
